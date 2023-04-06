@@ -1,0 +1,14 @@
+Flask
+gunicorn
+Jinja2
+MarkupSafe
+numpy
+scipy
+scikit-learn
+pandas
+opencv-python
+flask-cors
+jsonschema
+lxml
+requests
+tensorflow

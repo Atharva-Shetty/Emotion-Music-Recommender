@@ -1,0 +1,94 @@
+body {
+    background-color: rgba(3, 5, 5, 255);
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+#newimg {
+    width: 100%;
+    /* or any custom size */
+    height: 100%;
+    object-fit: contain;
+}
+
+#ld {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+}
+
+.loadimgdiv {
+    margin-top: 20vh;
+}
+
+#MainBack {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    padding-top: 1vh;
+    width: 100% !important;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+#dd,
+#sd {
+    display: flex;
+    position: relative;
+    border: 2px dashed rgb(192, 190, 190);
+    color: aliceblue;
+    width: 20vw;
+    left: 0px;
+    height: 30vh;
+
+}
+
+#dd {
+    margin-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sd {
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.cnt {
+        text-align: center;
+        translate: 0px -70px;
+    color: silver;
+}
+
+#TableContent {
+    translate: 0px -20px;
+    border: 2px solid aqua;
+    display: flex;
+    color: aqua;
+    text-align: center;
+    justify-content: center;
+    column-gap: 500px;
+    text-decoration: solid;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+#TableContent2 {
+    display: flex;
+    border: 2px solid rgb(11, 135, 135);
+    color: rgba(14, 138, 126, 0.933);
+    text-align: center;
+    justify-content: center;
+    column-gap: 250px;
+    text-decoration: solid;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: -10px;
+
+}
+

@@ -1,0 +1,59 @@
+
+  
+  .loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+  }
+  
+  .loader div {
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    opacity: .8;
+  }
+
+  
+  .one {
+    
+    border-top: 1px solid #16efdde6;
+    animation: rotate-left 1s linear infinite;
+  }
+  
+  .two {
+    border-right: 5px solid #172ce7;
+    animation: rotate-right 1s linear infinite;
+  }
+  
+  .three {
+    border-bottom: 2px solid #eb11d8e7;
+    animation: rotate-right 1s linear infinite;
+  }
+  
+  .four {
+    border-left: 5px solid #d30cc6ec;
+    animation: rotate-right 1s linear infinite;
+  }
+  
+  @keyframes rotate-left {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotate-right {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>Butterfly</title> 
+<style>
+     
+    url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body{
+        font-family: 'Exo', sans-serif;
+        background-color:#4e54c8;
+    }
+    h1{
+        text-align: center;
+        width: 100%;
+        margin: 0px auto;
+        color: white;
+        font-size: 40px;
+        letter-spacing: 5px;
+        
+       
+        margin-top: 40px;
+        font-family: 'Baloo Tamma', cursive;
+        text-shadow: -1px -1px 0px blue,
+          3px 3px 0px blue,
+          6px 6px 0px blue-900;
+        
+      }
+      h1 {
+        
+        
+        padding: 40px 50px;
+        text-align: center;
+        text-transform: uppercase;
+        text-rendering: optimizeLegibility;
+        
+        &.elegantshadow {
+          color: #131313;
+          background-color: #e7e5e4;
+          letter-spacing: .15em;
+          text-shadow: 
+            1px -1px 0 #767676, 
+            -1px 2px 1px #737272, 
+            -2px 4px 1px #767474, 
+            -3px 6px 1px #787777, 
+            -4px 8px 1px #7b7a7a, 
+            -5px 10px 1px #7f7d7d, 
+            -6px 12px 1px #828181, 
+            -7px 14px 1px #868585, 
+            -8px 16px 1px #8b8a89, 
+            -9px 18px 1px #8f8e8d, 
+            -10px 20px 1px #949392, 
+            -11px 22px 1px #999897, 
+            -12px 24px 1px #9e9c9c, 
+            -13px 26px 1px #a3a1a1, 
+            -14px 28px 1px #a8a6a6, 
+            -15px 30px 1px #adabab, 
+            -16px 32px 1px #b2b1b0, 
+            -17px 34px 1px #b7b6b5, 
+            -18px 36px 1px #bcbbba, 
+            -19px 38px 1px #c1bfbf, 
+            -20px 40px 1px #c6c4c4, 
+            -21px 42px 1px #cbc9c8, 
+            -22px 44px 1px #cfcdcd, 
+            -23px 46px 1px #d4d2d1, 
+            -24px 48px 1px #d8d6d5, 
+            -25px 50px 1px #dbdad9, 
+            -26px 52px 1px #dfdddc, 
+            -27px 54px 1px #e2e0df, 
+            -28px 56px 1px #e4e3e2;
+        }
+
+        
+        &.deepshadow {
+          color: #e0dfdc;
+          background-color: #333;
+          letter-spacing: .1em;
+          text-shadow: 
+            0 -1px 0 #fff, 
+            0 1px 0 #2e2e2e, 
+            0 2px 0 #2c2c2c, 
+            0 3px 0 #2a2a2a, 
+            0 4px 0 #282828, 
+            0 5px 0 #262626, 
+            0 6px 0 #242424, 
+            0 7px 0 #222, 
+            0 8px 0 #202020, 
+            0 9px 0 #1e1e1e, 
+            0 10px 0 #1c1c1c, 
+            0 11px 0 #1a1a1a, 
+            0 12px 0 #181818, 
+            0 13px 0 #161616, 
+            0 14px 0 #141414, 
+            0 15px 0 #121212, 
+            0 22px 30px rgba(0, 0, 0, 0.9);
+        }
+        &.insetshadow {
+          color: #202020;
+          background-color: #2d2d2d;
+          letter-spacing: .1em;
+          text-shadow: 
+            -1px -1px 1px #111, 
+            2px 2px 1px #363636;
+        }
+        &.retroshadow {
+          color: #2c2c2c;
+          background-color: #d5d5d5;
+          letter-spacing: .05em;
+          text-shadow: 
+            4px 4px 0px #d5d5d5, 
+            7px 7px 0px rgba(0, 0, 0, 0.2);
+        }
+      }
+    .button-29 {
+        align-items: center;
+        appearance: none;
+        background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+        border: 0;
+        border-radius: 6px;
+        box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono",monospace;
+        height: 48px;
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 2px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .15s,transform .15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow,transform;
+        font-size: 18px;
+      }
+      
+      .button-29:focus {
+        box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+      }
+      
+      .button-29:hover {
+        box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+      
+      .button-29:active {
+        box-shadow: #3c4fe0 0 3px 7px inset;
+        transform: translateY(2px);
+      }
+    .store{
+        background: #222;
+        color: #fff;
+        background-size: cover;
+        background-position: center;
+        max-width: 450px;
+        height: 100vh;
+        margin: auto;
+        position: relative;
+
+    }
+    .context {
+        width: 100%;
+        position: absolute;
+        top:50vh;
+        
+    }
+    
+    .context h1{
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+    }
+    
+    
+    .area{
+        background-color: blue;
+        background: #4e54c8;  
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+        width: 100%;
+        height:100vh;
+        
+       
+    }
+    body {background:#4e54c8;}
+
+#container {
+perspective: 600px;
+perspective-origin: 20% -20%;
+margin: -4em auto;
+}
+
+/* Pink Butterfly */
+div#butterfly{
+    position absolute;
+    left:0px;
+    top:0px;
+    width: 366px;
+    height: 160px;
+    
+    -webkit-transform: rotate(-20deg)  translate(30px, 60px) scale(0.8, 0.8);
+    -webkit-transform-origin: center center;
+    -moz-transform: rotate(-20deg)  translate(30px, 60px) scale(0.8, 0.8);
+    -moz-transform-origin: center center;
+}
+
+div#rightwing{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 178px;
+    height: 208px;
+    background-image: url(http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/img/wing.png);
+    background-repeat:no-repeat;
+    
+    -webkit-transform: rotate3d(0, 0, 0, 180deg); /* Mirror left wing */
+    -webkit-transform-origin: center right;
+    -webkit-animation-name: rightwingani;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-transform: rotate3d(0, 0, 0, 180deg); /* Mirror left wing */
+    -moz-transform-origin: center right;
+    -moz-animation-name: rightwingani;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rightwingani {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    30% {
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 1, 0, 100deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+@-moz-keyframes rightwingani {
+    from {
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    30% {
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    50% {
+        -moz-transform: rotate3d(0, 1, 0, 100deg);
+    }
+    70%{
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+    to{
+        -moz-transform: rotate3d(0, 1, 0, 180deg);
+    }
+}
+
+div#leftwing{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 178px;
+    height: 208px;
+    background-image: url(http://www.eleqtriq.com/wp-content/static/demos/2010/css3d/img/wing.png);
+    background-repeat: no-repeat;
+    
+    -webkit-transform-origin: top right;
+    -webkit-animation-name: leftwingani;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    
+    -moz-transform-origin: top right;
+    -moz-animation-name: leftwingani;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes leftwingani {
+    from {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    30%  {
+        -webkit-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    70%{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -webkit-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+
+@-moz-keyframes leftwingani {
+    from {
+        -moz-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    30%  {
+        -moz-transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        -moz-transform: rotate3d(0, 1, 0, 80deg);
+    }
+    70%{
+        -moz-transform: rotate3d(0, 1, 0, 00deg);
+    }
+    to{
+        -moz-transform: rotate3d(0, 1, 0, 00deg);
+    }
+}
+
+
+
+/* Blue Butterfly */
+#futterbly {
+margin-top: -2em;
+transform: rotateZ(-65deg) rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+transform-origin: 51% 60%;
+left: 800px;
+top: 0px;
+width: 400px;
+height: 238px;
+transform-style: preserve-3d;
+}
+
+.wing {
+transform: rotateX(30deg)  translate3d(-200px, 0px, 0px) rotate3d(0, 1, 0, 160deg);
+transform-origin: top right;
+position: absolute;
+left: 200px;
+top: 0px;
+width: 200px;
+height: 238px;
+background: url(http://blueskyyogaohio.com/wp-content/themes/Chameleon/images/butterfly.png) no-repeat;
+animation-name: rightwing_ani;
+animation-duration: 4s;
+animation-delay: .5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+#futterbly .left{
+transform: rotateX(30deg) 
+			rotate3d(0, 1, 0, 0deg);
+animation-name: leftwing_ani;
+left: 20px;
+top: 0px;
+}
+
+@keyframes rightwing_ani {
+	from {
+		transform: rotateX(30deg) 
+					translate3d(-200px, 0px, 0px)
+					rotate3d(0, 1, 0, 160deg);
+	}
+	20% {
+		transform: rotateX(30deg) 
+					translate3d(-200px, 0px, 0px)
+					rotate3d(0, 1, 0, 160deg);
+	}
+	50% {
+		transform: rotateX(30deg)
+					translate3d(-200px, 0px, 0px) 
+					rotate3d(0, 1, 0, 100deg);
+	}
+	70% {
+		transform: rotateX(30deg)
+					translate3d(-200px, 0px, 0px) 
+					rotate3d(0, 1, 0, 100deg);
+	}
+	to{
+		transform: rotateX(30deg) 
+					translate3d(-200px, 0px, 0px) 
+					rotate3d(0, 1, 0, 160deg);
+	}
+}
+
+@keyframes leftwing_ani {
+	from {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 0deg);
+	}
+	20% {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 80deg);
+	}
+	70% {
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 80deg);
+	}
+	to{
+		transform: rotateX(30deg) 
+					rotate3d(0, 1, 0, 00deg);
+	}
+}
+
+
+/* Orange Butterfly */
+.butterfly3 {
+	margin-top: -4em;
+	position: relative;
+	width: 275px;
+	transform: rotateZ(30deg);
+	transform-origin: 50% 50%;
+	left: 20em;
+	top: 0;
+}
+.butterfly3 > div {position:absolute;}
+.butterfly3 img {width:100%;}
+		
+.leftwing {
+	animation:flap-l 4s cubic-bezier(.08,1.47,.65,-0.68) infinite;
+}
+.rightwing {
+	animation:flap-r 4s cubic-bezier(.08,1.47,.65,-0.68) infinite;
+}
+.leftwing, .rightwing {z-index:1;}
+
+@keyframes flap-l {
+			0% {transform:rotateY(0);}
+			50% {transform:rotateY(80deg);}
+			100% {transform:rotateY(0);}
+}
+@keyframes flap-r {
+			0% {transform:rotateY(0); }
+			50% {transform:rotateY(-80deg);}
+			100% {transform:rotateY(0);}
+}
+    .circles{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .circles li{
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+        
+    }
+    
+    .circles li:nth-child(1){
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+    }
+    
+    
+    .circles li:nth-child(2){
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+    }
+    
+    .circles li:nth-child(3){
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+    }
+    
+    .circles li:nth-child(4){
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+    }
+    
+    .circles li:nth-child(5){
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+    }
+    
+    .circles li:nth-child(6){
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+    }
+    
+    .circles li:nth-child(7){
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+    }
+    
+    .circles li:nth-child(8){
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+    
+    .circles li:nth-child(9){
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+    
+    .circles li:nth-child(10){
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }
+    
+    
+    
+    @keyframes animate {
+    
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+    
+        100%{
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
+    
+    }
+    
+</style>
+</head>  
+<body> 
+    <div class="context">
+        
+    </div>
+
+    
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    <center><h1>Butterfly Species Prediction Model</h1></center>
+    <div id="container">
+        <div id="butterfly">
+            <div id="leftwing"></div>
+            <div id="rightwing"></div>
+        </div>
+        
+        <div id="futterbly">
+            <div class="left wing"></div>
+            <div class="right wing"></div>
+        </div>
+        
+    <div class="butterfly3">
+            <div class="body">
+                
+            </div>
+            <div class="leftwing">
+                
+            </div>
+            <div class="rightwing">
+                
+            </div>
+        </div>
+        
+    </div>
+    <div>
+
+    </div>
+    <form action = "/" method = "post" enctype="multipart/form-data">  
+       
+        <table style="padding-left:100px;">
+            <tr>
+                <th width="500" style="padding-top: 40px;">
+                    <input type="file" name="imagefile" id="image-input" / class="button-29" >  
+                </th>
+                <th width="250">
+                </th>
+                <th width="500" style="padding-top: 40px;  ">
+                    <input type = "submit" value="Predict" class="button-29"> 
+                </th>
+            </tr>
+            <tr>
+                <td height='50'>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                    <img id="imgBox" height='500' width ='500'>
+                    
+                </td>
+                <td>
+                </td>
+
+                <td>
+                    {% if prediction %}
+                        <center><h5 style='font-family: Comic Sans MS;
+                            font-size: 18px;
+                            padding: 10px 6px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            text-rendering: optimizeLegibility;
+                            color: white;
+                            position:relative;'> Image is of  <b><u>{{prediction}} emotion</u></b></h5><center>
+
+               
+                       <table  style="background-color: aqua; border-color: red blue gold teal;" >
+                            <h1>
+                            <!--Displaying the converted table-->
+                                 {% for table in tables %}
+                                <h2>{{titles[loop.index]}}</h2>                            
+                                <td>{{ table|safe }}</td>
+                                {% endfor %}     
+                            </h1> 
+                        </table>
+                
+                    {%endif%}
+
+                </td>
+            </tr>
+        </table>
+       
+   
+        
+    </form>  
+    <script>
+        var imageInput = document.getElementById("image-input");
+        var previewImage = document.getElementById("imgBox");
+        imageInput.addEventListener("change",function(event){
+            if(event.target.files.length == 0)
+            {
+                return;
+            }
+            var tempUrl = URL.createObjectURL(event.target.files[0]);
+            previewImage.setAttribute("src",tempUrl);
+        });
+
+        var loadFile = function(event){
+            imgBox.src = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
+        }
+
+        
+    </script>
+    
+</div > 
+
+
+</body>  
+</html>
